@@ -24,4 +24,8 @@ footer{
     
     border-top: 10px solid #f00;
   }
+  .sortButton:hover{
+      cursor: pointer;
+      color: darkred;
+  }
 

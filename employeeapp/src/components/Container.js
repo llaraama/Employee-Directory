@@ -6,13 +6,15 @@ import SearchForm from "./SearchForm";
 import List from "../components/List/index"
 import Headlines from "./Headlines"
 import API from "../utils/API";
-// import Moment from 'react-moment';
+
+
 
 
 class Container extends Component {
   state = {
     result: [],
     search: "",
+    direction:"descending",
     employees: []
   };
 
@@ -21,6 +23,7 @@ class Container extends Component {
     API.search()
     .then(res => {console.log(res)
         this.setState({ employees: res.data.results})
+        this.setState({result:this.state.employees})
     }).catch(err => console.log(err));
   }
 
@@ -42,36 +45,50 @@ class Container extends Component {
 // sorting component
   handleFormSubmit = event => {
     event.preventDefault();
-    let names = event.target.name;
-    let values = event.target.value;
-    let sortEmp=this.state.employees.sort((a, b) => (a.employees.name.first > b.employees.name.first) ? 1 : -1)
-  
-  this.setState({
-    [names]: values,
-    result:sortEmp
-  });
-};
+
+    let sortedEmployees =this.state.result.sort((a,b)=>{
+
+      if(this.state.direction === "descending"){
+       
+        this.setState({
+          direction:"ascending"
+        })
+          return (a.name.first > b.name.first)? 1:-1;
+
+      }else if(this.state.direction === "ascending"){
+        this.setState({
+          direction:"descending"
+        })
+        return (a.name.first < b.name.first)? 1:-1;
+       
+      }
+    })
+this.setState({
+  result:sortedEmployees
+})
+  };
+
+
 
 
   render() {
     
     return (
     <div>
+
     <Navbar />
     <SearchForm
           search={this.state.search}
-          handleFormSubmit={this.handleFormSubmit}
+          
           handleInputChange={this.handleInputChange}
         />
+        
     <Table>
-    <Headlines /> 
-    {/* <Moment format="YYYY/MM/DD">{this.state.employees.date}</Moment> */}
-    { this.state.result.length > 0 ? 
+    <Headlines handleFormSubmit={this.handleFormSubmit}/> 
+ 
+
     <List employees={this.state.result} />
-    :
-    <List employees={this.state.employees} />
-    
-    }
+   
     </Table>
     <Footer />
     </div> 
