@@ -1,6 +1,4 @@
 # Employee-Directory
-## Deployment
-https://llaraama.github.io/Employee-Directory/
 
 # Unit 19 React Homework: Employee Directory
 
@@ -8,8 +6,11 @@ https://llaraama.github.io/Employee-Directory/
 
 For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
 
-## Usage
+## Deployment
+https://llaraama.github.io/Employee-Directory/
 
+## Usage
+![employee-directory](https://user-images.githubusercontent.com/62354759/92547404-cc61e900-f222-11ea-9375-bbc4327fbd35.gif)
 
 ## User Story
 
