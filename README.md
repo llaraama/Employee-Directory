@@ -11,8 +11,6 @@ Deployment: https://llaraama.github.io/Employee-Directory/
   * [Installation](#Installation)
 
   * [Usage](#Usage)
-  
-  * [Credits](#Credits)
 
   * [License](#License)
 
