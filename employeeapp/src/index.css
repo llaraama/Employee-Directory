@@ -1,3 +1,4 @@
+
 #nav {
     height:120px ;
     text-align: center;
@@ -5,7 +6,7 @@
     background-image:url("./background.jpg");
 }
 #green{
-    background-color: rgb(0, 139, 65);
+    background-color: rgb(106, 209, 154);
     color:rgb(0,139,65);
     height: 10px;
 }
@@ -16,16 +17,9 @@
 footer{
     text-align: center;
 }
-.arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    
-    border-top: 10px solid #f00;
-  }
+
   .sortButton:hover{
       cursor: pointer;
-      color: darkred;
+      color: rgb(224, 10, 10);
   }
 
