@@ -11,8 +11,9 @@
     height: 10px;
 }
 #search{
-
     width:300px;
+    margin-left: auto;
+    margin-right: auto
 }
 footer{
     text-align: center;
@@ -23,3 +24,6 @@ footer{
       color: rgb(224, 10, 10);
   }
 
+#main{
+    text-align: center;
+}
