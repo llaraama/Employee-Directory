@@ -1,7 +1,10 @@
+
 #nav {
     text-align: center;
     color:white;
     background-image:url("./background.jpg");
+    font-family: 'Peddana', serif;
+    font-size: 400%;
 }
 #green{
     background-color: rgb(106, 209, 154);
@@ -17,13 +20,16 @@ footer{
     text-align: center;
 }
 
-  .sortButton:hover{
+.sortButton:hover{
       cursor: pointer;
       color: rgb(224, 10, 10);
-  }
+}
 
 #main{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 60%;
+}
+#root{
+    width: 100%;
 }
