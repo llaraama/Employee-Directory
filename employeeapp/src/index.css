@@ -1,6 +1,4 @@
-
 #nav {
-    height:120px ;
     text-align: center;
     color:white;
     background-image:url("./background.jpg");
@@ -25,5 +23,7 @@ footer{
   }
 
 #main{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
