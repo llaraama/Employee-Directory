@@ -38,7 +38,7 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 Clone this repo to your local machine using:https://github.com/llaraama/Employee-Directory.git
 
 ## Usage
-![employee-directory](https://user-images.githubusercontent.com/62354759/92547404-cc61e900-f222-11ea-9375-bbc4327fbd35.gif)
+![employee-directory](https://user-images.githubusercontent.com/62354759/94473831-bcdb1d80-019a-11eb-9129-2056294d54a0.gif)
 
 ## License
 MIT License
